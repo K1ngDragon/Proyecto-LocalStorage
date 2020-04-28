@@ -1,0 +1,121 @@
+/*ELIMINA MARGENES EL (*) ES EL SELECTOR UNIVERSAL */
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*TAMAÑO HEADER*/
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+/*FORMATO TITULO*/
+header h1 {
+    font-family: Arial;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+ }
+
+/*ESTILO BODY*/
+
+body {
+    background: #008dcd;
+    color: #FFF;
+    font-family: 'Abel', sans-serif;
+}
+
+/*INDICAMOS QUE VAMOS A USAR FLEXBOX*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #00acee;
+}
+
+.container > div {
+  background-color: #00acee;
+  width: 300px;
+  margin: 50px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.box1 label {
+    font-family: Arial;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.box2 > h2 {
+    font-family: Arial;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#lista-tweets {
+  line-height: 30px;
+}
+
+/*ESTILO X QUE PRESIONAMOS PARA BORRAR
+LA QUE QUE QUIERO COMABIAR POR UN ICONO DE UNA PAPELERA*/
+
+.borrar-tweet,
+.borrar-tweet:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+/*DAMOS FORMATO AL FOOTER H2*/
+
+footer > h2 {
+    font-family: 'Times';
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*DECORAMOS EL FORMUARIO Y EL BOTON*/
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #0071a4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #0071a4;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+/* EFECTO SOMBRA  LO QUISE APLICAR PERO NO QUEDA BIEN */
+
+/*.ELEMENTO A APLICAR EFECTO{
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+} */
